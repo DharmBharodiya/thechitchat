@@ -35,6 +35,10 @@ body{
     font-weight: 600;
 }
 
+#message{
+    font-weight: bold;
+    font-size: 18px;
+}
 
 .sub2{
     margin: 5px 0;
