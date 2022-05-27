@@ -35,6 +35,14 @@ body{
     font-weight: 600;
 }
 
+
+.sub2{
+    margin: 5px 0;
+    font-weight: 400;
+    opacity: 40%;
+    font-size: 15px;
+}
+
 .formDiv{
     width: 100%;
     display: flex;
