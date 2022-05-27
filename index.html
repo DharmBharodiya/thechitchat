@@ -11,8 +11,8 @@
 <body>
     <div class="container">
         <h1 id="theMainHead"><span>The</span>Chit<span>Chat</span></h1>
-        <p class="sub">sshhh..🤫</p>
-        <p class="sub2">the messages will be sent to dharm</p>
+        <p class="sub thePara">sshhh..🤫</p>
+        <p class="sub2 thePara">the messages will be sent to dharm</p>
 
         <div class="formDiv">
             <form action="https://formspree.io/f/xvollrln" method="post" class="theForm" id="my-form">
@@ -20,10 +20,10 @@
                 <input type="text" id="nameInput" class="text" placeholder="enter your name(optional)" name="name"> -->
                 <!-- <p id="email" class="input">E-mail: </p>
                 <input type="text" id="emailInput" class="text" placeholder="enter your E-mail"> -->
-                <p id="message" class="input">Message: </p>
+                <p id="message" class="inpu">Message: </p>
                 <input type="text" id="messageInput" class="text" placeholder="enter your message" name="message">
                 <div class="submitbutton">
-                    <input type="submit" value="send" class="submitBtn">
+                    <input type="submit" value="send" class="submitBtn" id="theButton" onclick="hePressedMe()">
                     <div id="status"></div>
                 </div>
                 
@@ -33,5 +33,18 @@
 
         <p>by <a href="https://www.instagram.com/dharm_bharodiya">dhrm</a></p>
     </div>
+
+    <script>
+        let btnMe = document.querySelector("#theButton");
+        let container = document.querySelector(".container");
+        let theMainHead = document.getElementById('theMainHead');
+
+        let para = document.getElementById('thePara');
+        function hePressedMe(){
+            theMainHead.style.background = 'pink';
+
+        }
+
+    </script>
 </body>
 </html>
